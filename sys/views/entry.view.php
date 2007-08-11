@@ -30,7 +30,7 @@ if (
 }
 else
 {
-	echo htmlspecialchars($entry->content);
+	echo '<pre><code>'.htmlspecialchars($entry->content).'</code></pre>';
 }
 ?>
 </dd>

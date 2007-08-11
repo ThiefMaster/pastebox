@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <title><?php echo htmlspecialchars($title); ?></title>
-<link rel="stylesheet" rev="stylesheet" type="text/css" href="<?php echo config()->url_global.'/style.css'; ?>">
+<link rel="stylesheet" rev="stylesheet" type="text/css" href="<?php echo config()->path_global.'/style.css'; ?>">
 <link rel="alternate" rev="alternate" type="application/rss+xml" href="<?php echo url_generate('index.rss'); ?>">
 </head>
 
