@@ -33,8 +33,8 @@ function url_generate()
 			return $pp.'/rss';
 		case 'new':
 			return $pp.'/new';
-		case 'entry.rss':
-			return $pp.'/'.array_shift($fa).'/rss';
+		case 'entry.txt':
+			return $pp.'/'.array_shift($fa).'/txt';
 		default:
 			return $pp.'/'.array_shift($fa);
 	}
