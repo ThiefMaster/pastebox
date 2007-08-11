@@ -11,11 +11,11 @@ Options:
 
 Installing:
 1. Extract the archive (or download through SVN)
-2. Edit pastebox/config.inc.php:
-   1. Customise your DSN (if you are planning on using MySQL
-   2. Edit the absolute and global paths
-3. Go to the web browser and open sys/setup.php
-4. You are done.
+2. Go to the web browser and open sys/setup.php
+3. You are done.
+
+If you want to customise more, please edit the sys/config.inc.php
+configuration file.
 
 Debian/Ubuntu installation bits:
 sudo apt-get install libapache2-mod-php5 php5 php5-sqlite
