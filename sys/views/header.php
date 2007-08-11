@@ -19,4 +19,6 @@
 <li><a href="<?php echo url_generate('index.rss'); ?>">Feeds</a></li>
 <?php if ( isset($menu_add) ) { echo $menu_add; } ?>
 </ul>
+<div class="clear"></div>
+
 <div id="content">
