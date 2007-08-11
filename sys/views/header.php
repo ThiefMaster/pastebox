@@ -17,6 +17,6 @@
 <li><a href="<?php echo url_generate('new'); ?>">New entry</a></li>
 <li><a href="<?php echo url_generate('index'); ?>">Latest entries</a></li>
 <li><a href="<?php echo url_generate('index.rss'); ?>">Feeds</a></li>
-
+<?php if ( isset($menu_add) ) { echo $menu_add; } ?>
 </ul>
 <div id="content">
