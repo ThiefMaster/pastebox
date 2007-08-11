@@ -1,0 +1,9 @@
+RewriteEngine On
+php_flag magic_quotes_gpc off
+php_flag register_globals off
+RewriteRule ^$ sys/index.php [L]
+RewriteRule ^new$ sys/new.php [L]
+RewriteRule ^rss$ sys/index.php?ot=rss [L]
+RewriteRule ^comment/(\d+)$ sys/entry.php?id=$1 [L]
+RewriteRule ^(\d+)$ sys/entry.php?id=$1 [L]
+RewriteRule ^(\d+)/(.+)$ sys/entry.php?id=$1&ot=$2 [L]
