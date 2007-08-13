@@ -14,6 +14,8 @@ Installing:
 2. Go to the web browser and open sys/setup.php
 3. You are done.
 
+You should never open anything in sys/ through your browser - or you'll most likely get some unexpected garbage!
+
 You might need to update permissions for sys/xmain.db to make sure that it is writable with the web server's user - such as www-data. To do this, you will need to execute:
   chmod +w sys/xmain.db
 If writing is still not possible, you may need to change the user groups with root:
