@@ -5,6 +5,8 @@ function config()
 	if (!isset($co) )
 	{
 		$co = new stdClass();
+		$co->user = NULL;
+		$co->pass = NULL;
 		$co->pdo = 'sqlite:xmain.db';
 		$parts = explode('/',$_SERVER['SCRIPT_NAME']);
 		$n = array_search('sys', $parts);

@@ -4,7 +4,8 @@ function db_get()
 	static $link;
 	if ( !isset($link) )
 	{
-		$link = new PDO(config()->pdo);
+		$link = new PDO(config()->pdo, config()->user, config()->pass);
+
 		$link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 	return $link;
