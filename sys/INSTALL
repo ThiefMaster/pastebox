@@ -30,3 +30,8 @@ Debian/Ubuntu installation bits:
 sudo apt-get install libapache2-mod-php5 php5 php5-sqlite
 sudo a2enmod rewrite
 sudo /etc/init.d/apache2 force-reload
+
+MySQL users:
+1. Edit sys/config.inc.php
+2. Visit sys/setup.php through your browser
+3. Should be set up!
