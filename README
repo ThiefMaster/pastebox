@@ -1,4 +1,4 @@
 PasteBox is a basic PHP script for pasting code snippets on-line and sharing them.
-Created by Drakas Tralas, http://sf.net/projects/pastebox/
+Created by Drakas Tralas / Vykintas Narmontas , http://pastebox.sf.net/
 
-All information files are located in sys/ directory of this installation.
+All information files are located in sys/ directory of this installation (INSTALL, README)
