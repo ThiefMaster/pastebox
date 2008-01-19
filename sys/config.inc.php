@@ -16,6 +16,9 @@ function config()
 		You will need to go to sys/setup.php too
 		(through your web browser) to set up the tables.
 	*/
+	/** Available: English (en), Portuguese (pt) **/
+		$co->language = 'en';
+		$co->title = 'PasteBox';
 		$parts = explode('/',$_SERVER['SCRIPT_NAME']);
 		$n = array_search('sys', $parts);
 		$pp = array_slice($parts, 0, $n);

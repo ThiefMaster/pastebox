@@ -1,4 +1,4 @@
-<?php if ( !isset($title) ) { $title = 'PasteBox'; }?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+<?php $title = config()->title; if ( !isset($title) ) { $title = 'PasteBox'; }?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,9 +14,9 @@
 <h1><?php echo htmlspecialchars($title); ?></h1>
 <ul id="nav">
 
-<li><a href="<?php echo url_generate('new'); ?>">New entry</a></li>
-<li><a href="<?php echo url_generate('index'); ?>">Latest entries</a></li>
-<li><a href="<?php echo url_generate('index.rss'); ?>">Feeds</a></li>
+<li><a href="<?php echo url_generate('new'); ?>"><?php echo _l("New entry"); ?></a></li>
+<li><a href="<?php echo url_generate('index'); ?>"><?php echo _l("Latest entries"); ?></a></li>
+<li><a href="<?php echo url_generate('index.rss'); ?>"><?php echo _l("Feeds"); ?></a></li>
 <?php if ( isset($menu_add) ) { echo $menu_add; } ?>
 </ul>
 <div class="clear"></div>

@@ -1,7 +1,7 @@
 
 
 </div>
-<p id="footer"><a href="http://sf.net/projects/pastebox">PasteBox</a>, developed by Drakas Tralas.</p>
+<p id="footer"><?php echo _l('Developed'); ?></p>
 </div>
 </body>
 </html>

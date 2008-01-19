@@ -1,19 +1,19 @@
 <?php
 
 $title = $entry->subject;
-$menu_add = '<li><a href="'.url_generate('entry.txt', $entry->id).'">Plain text</a></li>';
+$menu_add = '<li><a href="'.url_generate('entry.txt', $entry->id).'">'._l('Plain text').'</a></li>';
 require_once("views/header.php");
 ?>
 <dl id="entry">
-<dt>Subject</dt>
+<dt><?php echo _l("Subject"); ?></dt>
 <dd><?php echo htmlspecialchars($entry->subject); ?></dd>
-<dt>Author</dt>
+<dt><?php echo _l("Author"); ?></dt>
 <dd><?php echo htmlspecialchars($entry->name); ?></dd>
-<dt>Description</dt>
+<dt><?php echo _l("Description"); ?></dt>
 <dd><?php echo nl2br(htmlspecialchars($entry->description)); ?></dd>
-<dt>Posted on</dt>
+<dt><?php echo _l("Posted on"); ?></dt>
 <dd><?php echo date("r",$entry->date); ?></dd>
-<dt>Content</dt>
+<dt><?php echo _l("Content"); ?></dt>
 <dd>
 <?php
 if (

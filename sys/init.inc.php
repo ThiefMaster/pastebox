@@ -19,6 +19,8 @@ if ( !isset($_SERVER['SCRIPT_NAME']) )
 	die('$'.'_SERVER[\'SCRIPT_NAME\'] was not set. Assuming that not called from a web server - diying.');
 }
 require_once("config.inc.php");
+require_once("language.inc.php");
+
 require_once("functions.inc.php");
 require_once("dbobject.class.inc.php");
 require_once("dbs.class.inc.php");
