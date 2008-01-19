@@ -145,7 +145,7 @@ function vars_get()
 		return false;
 	}
 	if ( is_bool($args[0]) ) { $ignore = $args[0];array_shift($args[0]); }
-	if ( is_array($args[0]) ) { $args = $args[0]; }
+	if ( is_array($args[0]) ) { $args = $args[0];$ignore = false; }
 	else { $ignore = false; }
 	$ret = array();
 	//var_dump($args);

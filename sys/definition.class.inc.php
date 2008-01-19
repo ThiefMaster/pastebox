@@ -2,6 +2,7 @@
 class definition_text
 {
 	public $__value = NULL;
+	public $__name = NULL;
 	function setvalue($v)
 	{
 		$this->__value = (string)$v;
@@ -21,6 +22,7 @@ class definition_text
 class definition_textarea
 {
 	public $__value = NULL;
+	public $__name = NULL;
 	function __construct($options = array())
 	{
 		foreach($options as $k => $v)
@@ -51,6 +53,7 @@ class definition_textarea
 class definition_select
 {
 	public $__value = NULL;
+	public $__name = NULL;
 	public $items = array();
 	function type() { return 'select'; }
 	function __construct($data=array())

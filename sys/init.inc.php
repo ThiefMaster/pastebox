@@ -1,6 +1,6 @@
 <?php
 
-
+error_reporting(E_ALL);
 $ver = (int)implode('',explode('.', PHP_VERSION ));
 if ( $ver < 520 )
 {

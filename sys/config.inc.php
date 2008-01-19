@@ -8,6 +8,14 @@ function config()
 		$co->user = NULL;
 		$co->pass = NULL;
 		$co->pdo = 'sqlite:xmain.db';
+	/**
+		// MySQL users: uncomment this:
+		$co->user = 'user';
+		$co->pass = 'password';
+		$co->pdo = 'mysql:host=localhost;dbname=name';
+		You will need to go to sys/setup.php too
+		(through your web browser) to set up the tables.
+	*/
 		$parts = explode('/',$_SERVER['SCRIPT_NAME']);
 		$n = array_search('sys', $parts);
 		$pp = array_slice($parts, 0, $n);
