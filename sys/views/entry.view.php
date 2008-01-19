@@ -26,6 +26,7 @@ if (
 	include_once('geshi/geshi.php');
 	$language = $entry->type;
 	$geshi =& new GeSHi($entry->content, $language);
+	$geshi->enable_line_numbers(GESHI_FANCY_LINE_NUMBERS);
 	echo $geshi->parse_code();
 }
 else
