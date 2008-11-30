@@ -2,6 +2,7 @@ Installing PasteBox is pretty easy.
 Requirements:
 * PHP 5
 * PHP-PDO enabled
+* PHP-ctype enabled
 * Turned off magic_quotes and register_globals
 * .htaccess being enabled
 
@@ -14,8 +15,8 @@ Installing:
 2. Go to the web browser and open sys/setup.php
 3. You are done.
 
-You can alter sys/config.inc.php for all the options available.
-Languages are defined in sys/language.inc.php
+You can customise sys/config.inc.php for all the options available.
+Languages are defined in sys/language.inc.php (if you have your own, please contribute!)
 
 You should never open anything in sys/ through your browser - or you'll most likely get some unexpected garbage!
 
@@ -34,7 +35,10 @@ sudo apt-get install libapache2-mod-php5 php5 php5-sqlite
 sudo a2enmod rewrite
 sudo /etc/init.d/apache2 force-reload
 
+Gentoo installation bits:
+You will need to enable 'ctype', 'pdo' CFLAGS.
+
 MySQL users:
-1. Edit sys/config.inc.php
+1. Customise sys/config.inc.php
 2. Visit sys/setup.php through your browser
 3. Should be set up!
