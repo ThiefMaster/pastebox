@@ -16,4 +16,3 @@ catch(Exception $e)
 		echo "<p>Tables were created.</p>";
 	}
 }
-
