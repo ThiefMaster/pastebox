@@ -16,8 +16,15 @@ function config()
 		You will need to go to sys/setup.php too
 		(through your web browser) to set up the tables.
 	*/
-	/** Available: English (en), Portuguese (pt) **/
+	/** Available: English (en), Portuguese (pt), German (de) **/
 		$co->language = 'en';
+		if ( isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) )
+		{
+			$co->language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
+			if ( !isset($GLOBALS['l'][$co->language]) ) { $co->language = 'en'; }
+		}
+		else { $co->language = 'en'; }
+		$co->plangs = array('plain'=>_l('Plain text'), 'asp'=>'ASP', 'cpp' => 'C++', 'css'=>'CSS', 'javascript'=>'JavaScript', 'html'=>'HTML', 'pascal'=>'Pascal', 'php'=>'PHP', 'python'=>'Python', 'xml'=>'XML');
 		$co->title = 'PasteBox';
 		$parts = explode('/',$_SERVER['SCRIPT_NAME']);
 		$n = array_search('sys', $parts);
