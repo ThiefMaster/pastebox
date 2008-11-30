@@ -27,7 +27,6 @@ font-size:20px;
 padding-top:13px;
 padding-bottom:13px;
 padding-left:15px;
-
 padding-right:10px;
 }
 #nav li a:hover {
@@ -38,10 +37,15 @@ color:black;
 #content { background-color:#F9FAFF;clear:both;padding:1.5%; }
 body { margin:0px;padding:0px;font-family:"Bitstream Vera Sans", Verdana, sans-serif;font-size:13px; }
 h1 { display:none; }
-a {
-color:#8A9BC4;
-text-decoration:none;
-border-bottom: 1px dotted #8A9BC4;
-}
+a {color:#8A9BC4;text-decoration:none;border-bottom:1px dotted #8A9BC4;}
 dl { margin:0px;padding:0px; }
-p#footer { padding:10px;margin:5px; }
+dt { margin-top:10px;color:#8A9BC4;text-transform:uppercase;font-size:11px;}
+dt:first-letter { font-size:130%; }
+a:hover {border-bottom: 1px solid #8A9BC4;}
+dd {font-size:11px;margin-top:2px;color:#3C3C3C;}
+dd#d_content { font-size:13px; }
+dd.ii { color:#C0C0C0;font-size:8px;}
+p#footer { padding:10px;margin:5px;}
+input,select{ width:200px;}
+textarea{width:80%;}
+input,textarea,select {border:1px solid #8A9BC4; }

@@ -5,7 +5,7 @@ header("Content-type: application/rss+xml");
 echo '<'.'?xml version="1.0"?'.">\n"; ?>
 <rss version="2.0">
 <channel>
-<title>PasteBox</title>
+<title><?php print config()->title; ?></title>
 <link><?php echo url_generate(array('index', true)) ; ?></link>
 <?php
 $ee = entry::main();
