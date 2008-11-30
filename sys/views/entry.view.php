@@ -6,15 +6,15 @@ require_once("views/header.php");
 ?>
 <dl id="entry">
 <dt><?php echo _l("Subject"); ?></dt>
-<dd><?php echo htmlspecialchars($entry->subject); ?></dd>
+<dd id="d_subject"><?php echo htmlspecialchars($entry->subject); ?></dd>
 <dt><?php echo _l("Author"); ?></dt>
-<dd><?php echo htmlspecialchars($entry->name); ?></dd>
+<dd id="d_author"><?php echo htmlspecialchars($entry->name); ?></dd>
 <dt><?php echo _l("Description"); ?></dt>
-<dd><?php echo nl2br(htmlspecialchars($entry->description)); ?></dd>
+<dd id="d_description"><?php echo nl2br(htmlspecialchars($entry->description)); ?></dd>
 <dt><?php echo _l("Posted on"); ?></dt>
-<dd><?php echo date("r",$entry->date); ?></dd>
+<dd id="d_date"><?php echo date("r",$entry->date); ?></dd>
 <dt><?php echo _l("Content"); ?></dt>
-<dd>
+<dd id="d_content">
 <?php
 if (
 	ctype_alnum($entry->type) &&
