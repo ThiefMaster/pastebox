@@ -1,0 +1,77 @@
+# REQUIREMENTS #
+ * PHP 5
+ * A web server
+ * Regular expressions through regex
+ * Local system file reading and writing
+
+# PasteBox #
+Paste your snippets of code easily and with great performance. The contents
+are put into static files, so you don't really have to worry about large memory
+usage like in the previous version of PasteBox or many other Pastebin scripts
+out there that use MySQL or other dynamic database engines to process every single
+request.
+With this new version comes less dependency, meaning that all you really need to
+have ready is a webserver and the PHP interpreter - no fussy module and database
+installations.
+
+# INSTALLATION #
+To install the software, after extracting, all you need to do is to visit the
+file 'new.php' through your web browser. Then, 'index.html' will be generated,
+which serves as the entry submission and recent entry listing page.
+You will need to turn off magic_quotes_gpc and register_globals (to see how,
+just visit the 'new.php' page). It should be done by default anyway, because
+of serious security concerns present in many PHP software packages.
+Don't forget to enable write access to the webserver, it is crucial.
+
+# HOW IT WORKS #
+The data is submitted through 'index.html', and directed to 'new.php'. This
+file then creates a new paste entry as an HTML file and as a text file for 
+convenience. Then, the new file is added to the recent submissions list, which
+is located in '.recent' and its contents are shown as a list in 'index.html'.
+
+# CUSTOMIZATION #
+Update the file 'new.php' to customize any necessarily settings. The only 
+thing you, as a user, should be aware of is that the changes only take place
+after new entries are submitted, and the previous ones are not affected at all.
+This is because all of the pages are statically generated and not updated.
+
+Certain entries are removed after they have 'expired'. The options are
+descripbed in 'new.php'.
+
+# CHANGES #
+The new PasteBox v1.0.0 is a complete re-write of the previous PasteBox.
+The list of the significant changes:
+ * Static content caching - improves the performance of the server
+ * No database required
+ * Integrated simple captcha - disable it if you are using it in the local environment
+ * Located in a single functional file
+ * Simpler multiple language support
+ * More customization abilities
+ * Less menu items
+ * Pointers for modification
+ * Uses buffer caching for any dynamic pages
+ * Removed feed support (will be brought back if any users really want it)
+
+# LICENSE #
+
+  This license is similar to zlb license found at:
+    http://www.gzip.org/zlib/zlib_license.html
+
+
+  Copyright (C) The PasteBox developer - http://pastebox.sf.net/
+
+  This software is provided 'as-is', without any express or implied
+  warranty.  In no event will the authors be held liable for any damages
+  arising from the use of this software.
+
+  Permission is granted to anyone to use this software for any purpose,
+  including commercial applications, and to alter it and redistribute it
+  freely, subject to the following restrictions:
+
+  1. The origin of this software must not be misrepresented; you must not
+     claim that you wrote the original software. If you use this software
+     in a product, an acknowledgment in the product documentation would be
+     appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be
+     misrepresented as being the original software.
+  3. This notice may not be removed or altered from any source distribution.
